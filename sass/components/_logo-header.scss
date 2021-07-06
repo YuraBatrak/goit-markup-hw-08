@@ -1,0 +1,22 @@
+.nav__logo {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+}
+.nav__slogan {
+  color: var(--highlight-color);
+  font-family: var(--accent-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.nav__slogan--black {
+  color: #000000;
+  font-family: var(--accent-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}

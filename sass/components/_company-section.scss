@@ -1,0 +1,107 @@
+.company {
+  background-color: #f5f4fa;
+}
+.company__title {
+  color: var(--first-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 264px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+.company__list {
+  margin-top: 0;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+.company__item {
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+.staff {
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+  border-top: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.staff__title {
+  color: var(--first-text-color);
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  font-weight: 500;
+  margin: 0px 0px 10px 0px;
+}
+.staff__text {
+  color: var(--second-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: rgba(175, 177, 184, 1);
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--highlight-color);
+  }
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--highlight-color);
+  }
+}
+.social__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
