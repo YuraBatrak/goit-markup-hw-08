@@ -32,6 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: 0;
   }
 }
 .advantages__item {
@@ -43,6 +44,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 0;
   }
 }
 .feauturelist__text {
