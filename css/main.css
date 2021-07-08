@@ -938,7 +938,7 @@ img {
 
 .customers {
   flex-basis: calc((100% - 60px) / 2);
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -967,7 +967,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 0;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
 }
 
@@ -1588,6 +1588,12 @@ img {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 767px) {
+  .grid {
+    margin-right: 0px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .grid {
     flex-basis: calc((100% - 60px) / 2);
@@ -1604,6 +1610,10 @@ img {
   .grid:nth-child(3n + 3) {
     margin-right: 0;
   }
+}
+
+.grid__link {
+  width: 100%;
 }
 
 .grid__link:hover {
